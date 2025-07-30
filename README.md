@@ -2,7 +2,7 @@
 
 **Build AI apps on top of knowledge bases.**
 
-Blue Morpho helps you build AI agents that understand your business, using ontologies and knowledge graphs.
+Blue Morpho helps you build AI agents that understand your business context, using ontologies and knowledge graphs.
 
 1. Connect your data  
 2. Build knowledge bases in the form of ontologies and knowledge graphs.  
