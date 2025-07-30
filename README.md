@@ -17,9 +17,12 @@ Blue Morpho helps you build AI agents that understand your business, using ontol
 
 Almost all enterprise workflows require gathering information from multiple sources + contextualizing it + applying business logic. Yet simply putting AI agents on top of enterprise systems doesn’t work:
 
-❌ **Data is not indexed for agents to find it.** This makes it hard for them to locate relevant information. Vector embeddings are unreliable.  
+❌ **Data is not indexed for agents to find it.** This makes it hard for them to locate relevant information. Vector embeddings are unreliable.
+
 ❌ **It is hard for agents to reconcile information from multiple sources.** If systems have ten different definitions of “customer”, or “Walmart” shows up in ten different forms, AI agents are doomed anyway.  
+
 ❌ **Agents lack contextual information about the data.** Data does not live in isolation. E.g. for procurement use cases, there is a need to link data across emails, contracts, invoices, approval logs, ERP logs, …  
+
 ❌ **Agents fail to capture business logic.** It’s in people’s heads, applications, documents, … It doesn’t belong there.  
 
 ---
@@ -30,7 +33,7 @@ Almost all enterprise workflows require gathering information from multiple sour
   We do not rely on vector embeddings for agents to locate relevant information. We leverage metadata filtering instead. Basically, LLMs “read” through all input documents and extract vast quantities of metadata derived from business concepts defined in an ontology. Metadata is then used by AI agents to retrieve the right context to perform their tasks, reliably.  
 
 ✅ **Entity resolution with LLM as a judge, instead of human review.**  
-  We make it very simple to reconcile (“resolve”) information from multiple sources, making all information about a given entity accessible to AI agents from the same place. Typically, those extracted entities can be merged:
+  We make it very simple to reconcile (“resolve”) information from multiple sources, making all information about a given entity accessible to AI agents from the same place.
 
 ✅ **Smart orchestration of LLM calls in controlled environments, instead of fully autonomous agents going wild.**  
   We have a focus on reliability and scalability of our approach. A concrete example for a dashboard building agent: instead of prompting LLMs to “code a dashboard for XYZ” from scratch, which is prone to many pitfalls making the approach unreliable ; we believe in a parametrized approach. LLMs are given standardized components (charts, buttons, menus) that they can parametrize (with cypher queries to fetch data based on input parameters, or with styling options), making the approach reliable and scalable.  
