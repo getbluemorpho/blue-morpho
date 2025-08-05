@@ -61,13 +61,7 @@ Almost all enterprise workflows require gathering information from multiple sour
 These features are under active development and will be released in the coming weeks:
 
 - Build static or dynamic dashboards on top of your knowledge bases, using natural language  
-- Merge two or more knowledge bases  
-
----
-
-## Screenshots of the application
-
-(coming soon)
+- Merge two or more knowledge bases
 
 ---
 
