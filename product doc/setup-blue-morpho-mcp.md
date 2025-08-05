@@ -15,7 +15,7 @@ First, go to your Blue Morpho settings and create an API key (personal access to
 
 ---
 
-## Step 2: Configure in your AI tool
+## Step 2: Configure your AI tool
 
 MCP-compatible tools can connect to Blue Morpho using the Blue Morpho remote MCP server.
 
