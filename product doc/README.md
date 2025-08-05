@@ -81,3 +81,12 @@ Agents that operate outside of Blue Morpho can connect to its Knowledge Layer us
 | **Data Layer**     | Collect and structure unstructured/structured enterprise data        |
 | **Knowledge Layer**| Turn raw data into linked business context via ontologies and graphs |
 | **Application Layer** | Build agents and apps that reason over structured business knowledge  |
+
+---
+
+## Next Steps
+
+Functionally, the Blue Morpho platform delivers two core capabilities:
+
+- **Building Knowledge Bases** from structured and unstructured enterprise data  
+- **Operating AI agents** that reason and act on top of those Knowledge Bases
