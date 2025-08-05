@@ -75,6 +75,7 @@ Please open an [issue](https://github.com/getbluemorpho/blue-morpho/issues), or 
 ## Socials
 
 [Website](https://www.getbluemorpho.com)
+
 [LinkedIn](https://www.linkedin.com/company/get-blue-morpho/)
 
 ## Acknowledgements
