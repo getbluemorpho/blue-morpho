@@ -17,8 +17,6 @@ Go to the **Collections** section and create a new collection containing your ND
 Blue Morpho will automatically convert these documents to plain text if needed ("parse" them). This prepares them for further processing by LLMs. 
 This may take a few minutes depending on the number and size of the files.
 
----
-
 ## Step 2: Define Your Ontology
 
 To check NDAs against internal compliance rules, you’ll need to define key concepts using an **Ontology**.  
