@@ -23,7 +23,7 @@ MCP-compatible tools can connect to Blue Morpho using the Blue Morpho remote MCP
 
 ### Cursor
 
-In Cursor settings, search for "mcp". In "Tools & Integrations", click on "New MCP Server".
+In Cursor command palette, search for "mcp". In "Tools & Integrations", click on "New MCP Server".
 
 This creates a `mcp.json` file:
 
