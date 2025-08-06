@@ -35,7 +35,7 @@ These criteria become **classes** in your ontology—each one representing a rul
 
 Mutuality is often scattered across multiple clauses, it’s not enough to just check if the title says “Mutual NDA.” That’s why the `supporting_elements` property is important: it captures the specific passages in the NDA that justify the compliance decision.
 
-You can create your own ontology from scratch, or download our [example NDA review ontology](../assets/nda-review-ontology.md) and import it in the app using the “Import from YAML file” function.
+You can create your own ontology from scratch, or download our [example NDA review ontology](../assets/nda-review-ontology.yaml) and import it in the app using the “Import from YAML file” function.
 
 ## Step 3: Run an Extraction
 
