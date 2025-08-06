@@ -80,4 +80,4 @@ Let's not forget to update our Knowledge Base!
 <img width="421" height="169" alt="image" src="https://github.com/user-attachments/assets/bc3069da-c245-42a6-b781-c6733aeaaa36" />
 
 
-**Note:** The Knowledge Base has been successfully updated by your document edits will be saved to your local folder only, not Blue Morpho. We're working on automatic sync with Blue Morpho: stay tuned!
+**Note:** The Knowledge Base has been successfully updated by your document edits will be saved to your local folder only, not to Blue Morpho. We're working on automatic sync with Blue Morpho collections: stay tuned!
