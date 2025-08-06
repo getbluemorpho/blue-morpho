@@ -75,8 +75,9 @@ Cursor lets me review suggested changes in a nice interface where I can accept o
 
 - "Update the compliance status in Blue Morpho (using write queries)."
 
-Let's not forget to update our Knowledge Base:
+Let's not forget to update our Knowledge Base!
 
 <img width="421" height="169" alt="image" src="https://github.com/user-attachments/assets/bc3069da-c245-42a6-b781-c6733aeaaa36" />
+
 
 **Note:** The Knowledge Base has been successfully updated by your document edits will be saved to your local folder only, not Blue Morpho. We're working on automatic sync with Blue Morpho: stay tuned!
