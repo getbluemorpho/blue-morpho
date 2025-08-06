@@ -35,7 +35,7 @@ These criteria become **classes** in your ontology—each one representing a rul
 
 Mutuality is often scattered across multiple clauses, it’s not enough to just check if the title says “Mutual NDA.” That’s why the `supporting_elements` property is important: it captures the specific passages in the NDA that justify the compliance decision.
 
-You can create your own ontology from scratch, or download our [example NDA review ontology]() and import it in the app using the “Import from YAML file” function.
+You can create your own ontology from scratch, or download our [example NDA review ontology](../assets/nda-review-ontology.md) and import it in the app using the “Import from YAML file” function.
 
 ## Step 3: Run an Extraction
 
@@ -64,11 +64,13 @@ Your Knowledge Base should now be visible in the **Knowledge Base** section.
 - "Using Blue Morpho, project ‘YOUR-PROJECT’, extraction run ‘YOUR-EXTRACTION-RUN’, find non-compliant clauses for this NDA."
 
 In my case, Cursor finds the only breach is the following:
+
 <img width="519" height="125" alt="image" src="https://github.com/user-attachments/assets/0a7f3683-2332-4ddf-816c-7b7ff9c572d3" />
 
 - "Edit the NDA to make it compliant."
 
 Cursor lets me review suggested changes in a nice interface where I can accept or reject them:
+
 <img width="1337" height="116" alt="image" src="https://github.com/user-attachments/assets/79697a0e-85f7-4d06-8d14-ec4afe1f04ec" />
 
 - "Update the compliance status in Blue Morpho (using write queries)."
