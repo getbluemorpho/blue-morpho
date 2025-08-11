@@ -52,7 +52,7 @@ Your Knowledge Base should now be visible in the **Knowledge Base** section.
 
 ### Setup
 
-1. Install Cursor and connect Blue Morpho following [these steps](../product%20doc/setup-blue-morpho-mcp.md).
+1. Install Cursor and connect Blue Morpho following [these steps](../documentation/setup-blue-morpho-mcp.md).
 2. Open your NDA folder: **File > Open Folder**
 3. Create a new chat (top right corner)
 4. Select your target NDA
