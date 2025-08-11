@@ -69,6 +69,15 @@ Replace YOUR-API-KEY-HERE with your Blue Morpho API key (or preferably, use envi
 
 Restart Claude. Navigate back to Settings → Developer → Edit Config. You should see your running MCP connection.
 
+### Claude Code
+
+You can set-up the MCP server through the `claude` CLI:
+
+```bash
+export BLUE_MORPHO_TOKEN="bm_[...]"
+claude mcp add blue-morpho https://app.getbluemorpho.com/mcp/ -t http -H "X-API-Key: ${BLUE_MORPHO_TOKEN}" -s project
+```
+
 ## Step 3: test Blue Morpho MCP
 
 Once your AI tool is connected to Blue Morpho via MCP, you can immediately begin issuing commands to interact with your projects.
