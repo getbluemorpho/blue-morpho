@@ -59,21 +59,27 @@ Your Knowledge Base should now be visible in the **Knowledge Base** section.
 
 ### Example Prompts
 
-- "Using Blue Morpho, project ‘YOUR-PROJECT’, extraction run ‘YOUR-EXTRACTION-RUN’, find non-compliant clauses for this NDA."
+- **Find issues**
+
+> "Using Blue Morpho, project ‘YOUR-PROJECT’, knowledge base ‘YOUR-KNOWLEDGE-BASE’, find non-compliant clauses for this NDA."
 
 In my case, Cursor finds the only breach is the following:
 
 <img width="519" height="125" alt="image" src="https://github.com/user-attachments/assets/0a7f3683-2332-4ddf-816c-7b7ff9c572d3" />
 
-- "Edit the NDA to make it compliant."
+- **Fix them:**
+
+> "Edit the NDA to make it compliant."
 
 Cursor lets me review suggested changes in a nice interface where I can accept or reject them:
 
 <img width="1337" height="116" alt="image" src="https://github.com/user-attachments/assets/79697a0e-85f7-4d06-8d14-ec4afe1f04ec" />
 
-- "Update the compliance status in Blue Morpho (using write queries)."
+- **Update Blue Morpho**
 
-Let's not forget to update our Knowledge Base!
+> "Update the compliance status in Blue Morpho (using write queries)."
+
+This keeps your Knowledge Base in sync with the latest version.  
 
 <img width="421" height="169" alt="image" src="https://github.com/user-attachments/assets/bc3069da-c245-42a6-b781-c6733aeaaa36" />
 
