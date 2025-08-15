@@ -1,0 +1,103 @@
+entity_types:
+- description: Brokerage account containing various financial holdings
+  name: Account
+  properties:
+  - description: unique account identifier
+    is_required: false
+    name: accountNumber
+    possible_values: null
+    type: str
+  - description: name of the account holder
+    is_required: true
+    name: accountHolder
+    possible_values: null
+    type: str
+  - description: type of account (e.g., Individual, IRA)
+    is_required: true
+    name: accountType
+    possible_values: null
+    type: str
+  - description: name of the brokerage firm
+    is_required: true
+    name: broker
+    possible_values: null
+    type: str
+  - description: base currency for the account using ISO 4217 currency codes, e.g. USD, EUR, HKD
+    is_required: true
+    name: baseCurrency
+    possible_values: null
+    type: str
+- description: Any financial instrument available for investment
+  name: FinancialInstrument
+  properties:
+  - description: ticker symbol or unique identifier for the instrument
+    is_required: true
+    name: symbol
+    possible_values: null
+    type: str
+  - description: full name or description of the instrument
+    is_required: true
+    name: name
+    possible_values: null
+    type: str
+  - description: CUSIP identifier if available
+    is_required: false
+    name: cusip
+    possible_values: null
+    type: str
+  - description: type of instrument (e.g., Common Stock, Bond, ETF, Mutual Fund)
+    is_required: true
+    name: instrumentType
+    possible_values: null
+    type: str
+- description: Position or holding of a financial instrument within an account
+  name: Holding
+  properties:
+  - description: number of shares or units held
+    is_required: true
+    name: quantity
+    possible_values: null
+    type: float
+  - description: cost price per unit at purchase in decimal notation with currency, e.g. 1208.3 HKD
+    is_required: false
+    name: costPrice
+    possible_values: null
+    type: str
+  - description: total cost basis of the holding in decimal notation with currency, e.g. 1208.3 HKD
+    is_required: false
+    name: costBasis
+    possible_values: null
+    type: str
+  - description: total current market value of the holding in decimal notation with currency, e.g. 1208.3 HKD
+    is_required: true
+    name: marketValue
+    possible_values: null
+    type: str
+- description: Cash position within the account
+  name: CashBalance
+  properties:
+  - description: currency of the cash balance using ISO 4217 currency codes, e.g. USD, EUR, HKD
+    is_required: true
+    name: currency
+    possible_values: null
+    type: str
+  - description: amount of cash in decimal notation with currency, e.g. 1208.3 HKD
+    is_required: true
+    name: amount
+    possible_values: null
+    type: str
+  - description: type of cash (broker cash, total dividend accrual, or total interest accrual)
+    is_required: false
+    name: cashType
+    possible_values: null
+    type: str
+relation_types:
+- object_name: Holding
+  predicate: Contains
+  subject_name: Account
+- object_name: CashBalance
+  predicate: HasCash
+  subject_name: Account
+- object_name: FinancialInstrument
+  predicate: Has
+  subject_name: Holding
