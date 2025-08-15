@@ -50,7 +50,10 @@ entity_types:
     is_required: true
     name: instrumentType
     possible_values:
-    - stock; bond; etf; mutual fund
+    - stock
+    - bond
+    - etf
+    - mutual fund
     type: str
 - description: Position or holding of a financial instrument within an account
   name: Holding
@@ -86,11 +89,13 @@ entity_types:
     name: amount
     possible_values: null
     type: str
-  - description: type of cash
-    is_required: false
+  - description: type of cash held on the account
+    is_required: true
     name: cashType
     possible_values:
-    - broker cash; total dividend accrual; total interest accrual
+    - broker cash
+    - total dividend accrual
+    - total interest accrual
     type: str
 relation_types:
 - object_name: Holding
