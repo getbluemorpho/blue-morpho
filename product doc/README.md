@@ -21,7 +21,7 @@ As you get started with Blue Morpho, think of the platform as being organized in
 
 ### 1. Data Layer
 
-Data is stored in **Collections**, which support two types of data:
+Raw input data is stored in **Collections**, which support two types of data:
 
 - **Unstructured**: such as `.pdf`, `.txt`
 - **Structured**: such as `.csv` (coming soon)
