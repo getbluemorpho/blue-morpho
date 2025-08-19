@@ -32,8 +32,17 @@ When consolidating multiple portfolios, key concepts (ontology classes) include 
 Navigate to the **Ontologies** section and create a new ontology. You can name it "consolidate portfolios". After the creation, click on "New version": you can either use the editor or download our [example ontology in YAML format](https://github.com/getbluemorpho/blue-morpho/blob/main/assets/consolidate%20portfolios.yaml) and import it directly into **Blue Morpho**.
 
 You should see the following classes: 
+<img width="615" height="530" alt="image" src="https://github.com/user-attachments/assets/c9ba3341-0562-43da-aa29-475cceefa340" />
+
+<img width="615" height="466" alt="image" src="https://github.com/user-attachments/assets/705e98c5-5a57-4a61-b2e9-69bc79b8ea6a" />
+
+<img width="617" height="419" alt="image" src="https://github.com/user-attachments/assets/baa1b315-cdac-4e51-aee2-2e4669259300" />
+
+<img width="614" height="317" alt="image" src="https://github.com/user-attachments/assets/244f5886-28a1-4e9b-b515-14389d4fb910" />
 
 And the following relationships:
+
+<img width="639" height="501" alt="image" src="https://github.com/user-attachments/assets/61bc5e6d-ed79-4232-b9b4-e30943b5efa9" />
 
 If desired, you can refine the ontology further by modeling `Transactions`, `Dividends`, and other financial concepts.
 
@@ -49,7 +58,8 @@ The default settings work well and there is no need to configure advanced parame
 
 At this stage, you should have extracted 3 `Accounts`, 192 `Financial Instruments`, 185 `Holdings` and 7 `Cash Balances`.
 
-As you can see in the results section, relations have also been extracted. For example, this particular `Holding` is linked with one `Financial Instrument` and one `Account` (you can click on them to see their details):
+As you can see in the results section, relations have also been extracted. For example, this particular `Holding` is linked with one `Financial Instrument` and one `Account`:
+<img width="1029" height="586" alt="image" src="https://github.com/user-attachments/assets/7fdbc1a6-c727-4865-92ed-147bd22dd220" />
 
 <details>
 <summary>Advanced considerations: How Blue Morpho Handles Different Broker Data Formats</summary>
