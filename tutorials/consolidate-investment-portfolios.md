@@ -129,9 +129,10 @@ Let's first verify that we can replicate summary statistics present in the accou
 <img width="833" height="632" alt="image" src="https://github.com/user-attachments/assets/38a63385-da9c-437c-a5a0-5dddbff6b128" />
 
 You should have the exact same metrics that you can find in the accounts statements. For example, in the traditional IRA account statement, we can find:
+
 <img width="390" height="157" alt="image" src="https://github.com/user-attachments/assets/20a26d14-97e6-4cba-9d6b-cd1df6e9b436" />
 
-That's a good start! Now we can perform other queries.
+The numbers match (although the aggregated information is of course not in the knowledge base), that's a good start! Now we can perform other queries.
 
  - **Top holdings of the combined portfolios**
 
