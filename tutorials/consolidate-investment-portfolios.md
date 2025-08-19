@@ -59,19 +59,23 @@ The default settings work well and there is no need to configure advanced parame
 At this stage, you should have extracted 3 `Accounts`, 192 `Financial Instruments`, 185 `Holdings` and 7 `Cash Balances`.
 
 As you can see in the results section, relations have also been extracted. For example, this particular `Holding` is linked with one `Financial Instrument` and one `Account`:
-<img width="1029" height="586" alt="image" src="https://github.com/user-attachments/assets/7fdbc1a6-c727-4865-92ed-147bd22dd220" />
+<img width="1212" height="642" alt="image" src="https://github.com/user-attachments/assets/3b56bd45-a8b6-406a-9211-809d46fb221e" />
+
 
 <details>
 <summary>Advanced considerations: How Blue Morpho Handles Different Broker Data Formats</summary>
 <br>
 Different brokers format data inconsistently:
 - Some classify interest payments or dividends as transactions, others don't
-- Some show sell transactions as negative quantities, others as positive
+- Some show sell transaction amounts as negative quantities, others as positive
 - Date formats, currency symbols, and field names vary across platforms
 
 **What you can do:**
  - **Use descriptive class definitions**: For example, if you only want stock/bond transactions (excluding interest payments or dividends), state this in your `Transaction` class description
- - **Use descriptive property definitions**: For example, if you want sell transactions as positive quantities, specify that all `quantity` and `cost` values should be positive numbers and add a `transaction_type` property that is either "sell" or "buy".
+<img width="612" height="94" alt="image" src="https://github.com/user-attachments/assets/d2997e72-c4d1-49f3-be55-2a4cf5bcb34a" />
+
+ - **Use descriptive property definitions**: For example, if you want sell transaction amounts as positive quantities, specify that all `quantity` and `amount` values should be positive numbers and add a `transaction_type` property that is either "sell" or "buy".
+<img width="608" height="528" alt="image" src="https://github.com/user-attachments/assets/b3c4849e-5dcc-4692-9748-42914ffa56b8" />
 
 Blue Morpho will automatically transform inconsistent broker data into clean, standardized entities that follow your exact specifications. 
 
@@ -87,6 +91,7 @@ To do this, click on "Add class to deduplicate entities" and select `Financial I
 Using natural language, simply state how you want duplicates to be identified. In this case, it's straightforward:
 
 > "Merge instruments if they have the same symbol or CUSIP."
+<img width="1270" height="640" alt="image" src="https://github.com/user-attachments/assets/7159f869-95a1-420d-928b-47b7a1a412d1" />
 
 Click on "Generate rules" and you should see a set of conditions displayed on the right.
 
@@ -97,6 +102,7 @@ Clicking "Deduplicate" performs the consolidation.
 After deduplication, you will have 387 entities before deduplication and 290 entities after.
 
 This step keeps account-specific holdings separate (for tax tracking or individual portfolio performance) while enabling portfolio-wide analysis, as we'll see in the next step. See for example "BKNG" `Financial Instrument` that is linked to 3 `Holdings` and originates from 3 source entities:
+<img width="1224" height="282" alt="image" src="https://github.com/user-attachments/assets/3d16fb82-299e-462e-b105-552e02e98253" />
 
 <details>
 <summary>Advanced considerations: Sophisticated Deduplication</summary>
@@ -112,7 +118,7 @@ This is where it gets the most exciting! You can now run sophisticated queries a
 
 Navigate to **Ask** section. This will open a conversational interface. You should land on our dedicated "Knowledge Base Agent". If not, select it from the menu as in the screenshot below:
 
-
+<img width="621" height="175" alt="image" src="https://github.com/user-attachments/assets/71a666b8-aa08-4ec2-8c24-a46b5cb7a75f" />
 
  - **Summary statistics**
 
@@ -120,9 +126,16 @@ Let's first verify that we can replicate summary statistics present in the accou
 
 > Project ‘YOUR-PROJECT’, knowledge base ‘YOUR-KNOWLEDGE-BASE’, compute allocation (in terms of market value and % of total) by type of financial instrument, for each account. Take the cash position into account" 
 
-You should have the exact same metrics that you can find in the accounts statements. That's a good start! Now we can perform other queries.
+<img width="833" height="632" alt="image" src="https://github.com/user-attachments/assets/38a63385-da9c-437c-a5a0-5dddbff6b128" />
+
+You should have the exact same metrics that you can find in the accounts statements. For example, in the traditional IRA account statement, we can find:
+<img width="390" height="157" alt="image" src="https://github.com/user-attachments/assets/20a26d14-97e6-4cba-9d6b-cd1df6e9b436" />
+
+That's a good start! Now we can perform other queries.
 
  - **Top holdings of the combined portfolios**
+
+<img width="836" height="627" alt="image" src="https://github.com/user-attachments/assets/ff768c82-5451-427a-8853-5485e8d94ba7" />
 
 Perfect!
 
