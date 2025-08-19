@@ -29,7 +29,7 @@ Upon upload, **Blue Morpho** will automatically parse these documents, transform
 
 When consolidating multiple portfolios, key concepts (ontology classes) include `Accounts`, `Holdings`, and `Financial Instruments`.
 
-Navigate to the **Ontologies** section and create a new ontology. You can name it "consolidate portfolios". After the creation, click on "New version": you can either use the editor or download our [example ontology in YAML format](https://github.com/getbluemorpho/blue-morpho/blob/main/assets/consolidate%20portfolios.yaml) and import it directly into **Blue Morpho**.
+Navigate to the **Ontologies** section and create a new ontology. You can name it "consolidate portfolios". After the creation, click on "New version": you can either use the editor or download our [example ontology in YAML format]([https://github.com/getbluemorpho/blue-morpho/blob/main/assets/consolidate%20portfolios.yaml](https://github.com/getbluemorpho/blue-morpho/blob/main/assets/consolidate%20portfolios%20ontology.yaml) and import it directly into **Blue Morpho**.
 
 You should see the following classes: 
 <img width="615" height="530" alt="image" src="https://github.com/user-attachments/assets/c9ba3341-0562-43da-aa29-475cceefa340" />
@@ -135,6 +135,8 @@ You should have the exact same metrics that you can find in the accounts stateme
 The numbers match (although the aggregated information is of course not in the knowledge base), that's a good start! Now we can perform other queries.
 
  - **Top holdings of the combined portfolios**
+
+> What are the top 10 holdings of the combined portfolio? For each holding, indicate in how many accounts it can be found.
 
 <img width="836" height="627" alt="image" src="https://github.com/user-attachments/assets/ff768c82-5451-427a-8853-5485e8d94ba7" />
 
