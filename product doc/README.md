@@ -24,7 +24,7 @@ As you get started with Blue Morpho, think of the platform as being organized in
 Data is stored in **Collections**, which support two types of data:
 
 - **Unstructured**: such as `.pdf`, `.txt`
-- **Structured**: such as `.csv`
+- **Structured**: such as `.csv` (coming soon)
 
 Collections typically originate from organizational data sources, either:
 
