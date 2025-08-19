@@ -8,7 +8,7 @@ If you have different investment account types (IRAs, 401(k)s, taxable accounts)
 This use case demonstrates the strength of our approach, as these results cannot be obtained using any state-of-the-art model out of the box.
 
 > **Similar Use Cases**
-> This approach works for any use case where you need to structure and homogenize data for structured queries. Similar examples include:
+> This approach works for any use case where you need to structure and homogenize data for structured queries (essentially, "turn data into tables and make it queryable"). Similar examples include:
 > - **Ledger consolidation:** Extract journal entries, accounts, and amounts from PDF exports to unify multiple accounting systems
 > - **Portfolio management for Private Equity:** Create portfolio management applications and automate reporting to LPs
 > - **Asset management & maintenance:** Merge asset registries from different plants or fleets to enable fleet-wide analytics
