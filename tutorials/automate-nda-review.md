@@ -1,4 +1,4 @@
-# Tutorial: Automate NDA Compliance with Blue Morpho
+# Tutorial: Automate NDA Compliance with Blue Morpho and Cursor
 
 Does your legal team review endless NDAs, always checking for the same compliance criteria?  
 This tutorial shows you how to automate that review process using **Blue Morpho**.
