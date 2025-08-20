@@ -56,7 +56,7 @@ This step is not needed for portfolio statements (it's reserved for very long do
 ### 3.2 Extraction
 The default settings work well and there is no need to configure advanced parameters. Click "Extract" to perform the extraction.
 
-At this stage, you should have extracted 3 `Accounts`, 192 `Financial Instruments`, 185 `Holdings` and 7 `Cash Balances`.
+At this stage, you should have extracted 3 `Accounts`, 192 `Financial Instruments`, 184 `Holdings` and 7 `Cash Balances`.
 
 As you can see in the results section, relations have also been extracted. For example, this particular `Holding` is linked with one `Financial Instrument` and one `Account`:
 <img width="1212" height="642" alt="image" src="https://github.com/user-attachments/assets/3b56bd45-a8b6-406a-9211-809d46fb221e" />
@@ -99,7 +99,7 @@ Click on "Generate rules" and you should see a set of conditions displayed on th
 
 Clicking "Deduplicate" performs the consolidation.
 
-After deduplication, you will have 387 entities before deduplication and 290 entities after.
+After deduplication, you will have 386 entities before deduplication and 289 entities after.
 
 This step keeps account-specific holdings separate (for tax tracking or individual portfolio performance) while enabling portfolio-wide analysis, as we'll see in the next step. See for example "BKNG" `Financial Instrument` that is linked to 3 `Holdings` and originates from 3 source entities:
 <img width="1224" height="282" alt="image" src="https://github.com/user-attachments/assets/3d16fb82-299e-462e-b105-552e02e98253" />
