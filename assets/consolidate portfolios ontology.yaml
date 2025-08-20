@@ -63,32 +63,34 @@ entity_types:
     name: quantity
     possible_values: null
     type: float
-  - description: cost price per unit at purchase in decimal notation with currency,
-      e.g. 1208.3 HKD
-    is_required: false
+  - description: cost price per unit at purchase, up to two decimals
+    is_required: true
     name: costPrice
     possible_values: null
-    type: str
-  - description: total cost basis of the holding in decimal notation with currency,
-      e.g. 1208.3 HKD
-    is_required: false
+    type: float
+  - description: total cost basis of the holding, up to two decimals
+    is_required: true
     name: costBasis
     possible_values: null
-    type: str
-  - description: total current market value of the holding in decimal notation with
-      currency, e.g. 1208.3 HKD
-    is_required: false
+    type: float
+  - description: total current market value of the holding, up to two decimals
+    is_required: true
     name: marketValue
+    possible_values: null
+    type: float
+  - description: currency of the holding in ISO 4217 format
+    is_required: true
+    name: currency
     possible_values: null
     type: str
 - description: Cash position within the account
-  name: CashBalance
+  name: CashPosition
   properties:
-  - description: amount of cash in decimal notation with currency, e.g. 1208.3 HKD
+  - description: amount of cash, up to two decimals
     is_required: true
     name: amount
     possible_values: null
-    type: str
+    type: float
   - description: type of cash held on the account
     is_required: true
     name: cashType
@@ -97,11 +99,16 @@ entity_types:
     - total dividend accrual
     - total interest accrual
     type: str
+  - description: currency of the cash position in ISO 4217 format
+    is_required: true
+    name: currency
+    possible_values: null
+    type: str
 relation_types:
 - object_name: Holding
   predicate: Contains
   subject_name: Account
-- object_name: CashBalance
+- object_name: CashPosition
   predicate: HasCash
   subject_name: Account
 - object_name: FinancialInstrument
