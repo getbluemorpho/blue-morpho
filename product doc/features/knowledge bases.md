@@ -1,0 +1,47 @@
+# Knowledge Bases Guide
+
+## What are Knowledge Bases?
+
+Knowledge Bases are the final, queryable form of your extracted knowledge graphs. They transform the results from your Extraction Runs into permanent, searchable repositories of structured information that can be queried by AI agents.
+
+## Core Concepts
+
+### What is a Knowledge Base?
+
+A Knowledge Base is a structured repository that:
+- **Stores Extracted Knowledge**: Contains entities, relationships, and metadata from your processed documents
+- **Enables AI Querying**: Can be queried using our hosted conversational AI interface from the "Ask" tab, or any other conversation UI integrated with Blue Morpho through MCP
+- **Supports Analytics**: Powers AI-generated dashbooards. 
+
+### Knowledge Base vs Extraction Run
+
+| Extraction Run | Knowledge Base |
+|---|---|
+| Temporary processing job | Permanent data repository |
+| Experimental/iterative | Production-ready |
+| Limited querying in the inteface | Available to AI for querying using graph query language |
+
+
+## Create your Knowledge Base
+
+**Steps:**
+- Complete Extraction Run
+- Go to "results"
+- Click "Create Knowledge Base"
+- Knowledge Base becomes available for querying
+
+## Query Your Knowledge Base
+
+Once your Knowledge Base is ready, you can:
+
+#### Query it using our conversational interface available from the "Ask" section
+
+Go to "Ask" section in the sidebar, name your project and knowledge base of interest, and query it in natural language!
+
+#### Expose it to external agents through Blue Morpho Model Context Protocol
+
+See our related tutorial to connect Blue Morpho to other AI tools such as Claude Desktop, Cursor, etc. through Model Context Protocol.
+
+#### Use it to power dasdhboard analytics
+
+(coming soon)
