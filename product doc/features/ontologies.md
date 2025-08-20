@@ -1,4 +1,4 @@
-# Ontology - Product Documentation
+# Ontologies
 
 ## Overview
 
