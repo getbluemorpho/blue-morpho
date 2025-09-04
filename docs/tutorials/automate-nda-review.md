@@ -1,4 +1,4 @@
-# Tutorial: Automate NDA Compliance with Blue Morpho and Cursor
+# Automate NDA Compliance 
 
 Does your legal team review endless NDAs, always checking for the same compliance criteria?  
 This tutorial shows you how to automate that review process using **Blue Morpho**.
@@ -52,7 +52,7 @@ Your Knowledge Base should now be visible in the **Knowledge Base** section.
 
 ### Setup
 
-1. Install Cursor and connect Blue Morpho following [these steps](../product%20doc/setup-blue-morpho-mcp.md).
+1. Install Cursor and connect Blue Morpho following [these steps](../product/setup-blue-morpho-mcp.md).
 2. Open your NDA folder: **File > Open Folder**
 3. Create a new chat (top right corner)
 4. Select your target NDA

@@ -1,4 +1,4 @@
-# Consolidate and Analyze Your Investment Portfolios Using Blue Morpho
+# Consolidate and Analyze Your Investment Portfolios 
 
 If you have different investment account types (IRAs, 401(k)s, taxable accounts) or use different brokers, you know how tedious it is to get a complete picture of your holdings. This tutorial shows you how to use Blue Morpho to:
 - Consolidate identical holdings across multiple portfolios for a unified view

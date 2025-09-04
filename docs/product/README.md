@@ -1,4 +1,4 @@
-# Blue Morpho Platform Overview
+# Platform Overview
 
 The **Blue Morpho** platform is designed to help you build all kinds of **AI agents**, **apps**, and **workflows** on top of **enterprise data**.
 

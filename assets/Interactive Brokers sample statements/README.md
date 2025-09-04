@@ -1,1 +1,0 @@
-These statements are sample statements published by Interactive Brokers and freely available on their [website](https://www.ibkrguides.com/reportingreference/reportguide/activity%20statement%20samples.htm).  
