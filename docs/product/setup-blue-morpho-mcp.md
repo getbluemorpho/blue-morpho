@@ -1,4 +1,4 @@
-# Model Context Protocol (MCP) 
+# Model Context Protocol
 
 The Model Context Protocol (MCP) is a standard for connecting Large Language Models (LLMs) to platforms like Blue Morpho. This guide covers how to connect Blue Morpho to the following AI tools using MCP:
 

@@ -1,34 +1,35 @@
 site_name: Blue Morpho Docs
-site_url: https://getbluemorpho.github.io/blue-morpho/
+site_url: https://docs.getbluemorpho.com/
 theme:
   name: material
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: DM Sans
+    code: DM Sans
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
     - navigation.footer
-  palette:
+    - navigation.path
+    - navigation.sections
 
-    # Palette toggle for light mode
+  palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
-      primary: custom
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
-      primary: custom    
 
-extra_css:
-  - stylesheets/extra.css      
+# extra_css:
+  # - stylesheets/extra.css      
 
 markdown_extensions:
   - attr_list
@@ -51,4 +52,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-copyright: ⓒ Copyright 2025
+copyright: ⓒ Copyright 2025 - Blue Morpho

@@ -1,4 +1,4 @@
-# Blue Morpho
+# Getting Started 
 
 **Build AI apps on top of knowledge bases.**
 
