@@ -1,5 +1,5 @@
 site_name: Blue Morpho Docs
-site_url: https://docs.getbluemorpho.com/
+site_url: https://getbluemorpho.github.io/blue-morpho/
 theme:
   name: material
   font:
