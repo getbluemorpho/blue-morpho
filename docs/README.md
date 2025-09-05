@@ -78,6 +78,8 @@ Please open an [issue](https://github.com/getbluemorpho/blue-morpho/issues), or 
 
 [LinkedIn](https://www.linkedin.com/company/get-blue-morpho/)
 
+[GitHub](https://github.com/getbluemorpho/blue-morpho)
+
 ## Acknowledgements
 
 This project uses the following open source projects:
