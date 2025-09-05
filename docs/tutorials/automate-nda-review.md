@@ -3,10 +3,13 @@
 Does your legal team review endless NDAs, always checking for the same compliance criteria?  
 This tutorial shows you how to automate that review process using **Blue Morpho**.
 
-> **Similar use cases:** This approach works for any use case where you need to validate a set of documents against a defined set of rules. Similar examples include:
-> - Ensuring contracts meet GDPR compliance  
-> - Screening RFPs for eligibility requirements  
-> - In M&A, parsing data room documents to extract relevant diligence signals
+**Similar use cases** 
+
+This approach works for any use case where you need to validate a set of documents against a defined set of rules. Similar examples include:
+
+- Ensuring contracts meet GDPR compliance  
+- Screening RFPs for eligibility requirements  
+- In M&A, parsing data room documents to extract relevant diligence signals
 
 ---
 
@@ -21,6 +24,7 @@ This may take a few minutes depending on the number and size of the files.
 
 To check NDAs against internal compliance rules, you’ll need to define key concepts using an **Ontology**.  
 For example, you might want to check the following points:
+
 - Is the NDA mutual, allowing both parties to share confidential information?
 - Does the NDA preserve IP ownership for the disclosing party?
 - Is the jurisdiction listed among your approved legal regions?
@@ -33,7 +37,7 @@ These criteria become **classes** in your ontology—each one representing a rul
 
 Mutuality is often scattered across multiple clauses, it’s not enough to just check if the title says “Mutual NDA.” That’s why the `supporting_elements` property is important: it captures the specific passages in the NDA that justify the compliance decision.
 
-You can create your own ontology from scratch, or download our [example NDA review ontology](https://github.com/getbluemorpho/blue-morpho/blob/main/assets/review%20nda%20ontology.yaml) and import it in the app using the “Import from YAML file” function.
+You can create your own ontology from scratch, or download our [example NDA review ontology](https://github.com/getbluemorpho/blue-morpho/blob/main/docs/assets/review%20nda%20ontology.yaml) and import it in the app using the “Import from YAML file” function.
 
 ## Step 3: Run an Extraction
 

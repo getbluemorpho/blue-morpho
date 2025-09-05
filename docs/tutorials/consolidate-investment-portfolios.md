@@ -25,7 +25,7 @@ Go to the **Collections** section and create a new collection containing your in
 - A Roth IRA  
 - A regular taxable account
 
-You can download them [here](https://github.com/getbluemorpho/blue-morpho/tree/main/assets/Interactive%20Brokers%20sample%20statements).
+You can download them [here](https://github.com/getbluemorpho/blue-morpho/tree/main/docs/assets/Interactive%20Brokers%20sample%20statements).
 
 Upon upload, **Blue Morpho** will automatically parse these documents, transforming them into raw text while preserving table structures to feed them to LLMs in the next steps.
 
