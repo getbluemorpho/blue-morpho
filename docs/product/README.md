@@ -17,9 +17,7 @@ Ready to begin?
 
 ## Introductory Concepts
 
-As you get started with Blue Morpho, think of the platform as being organized into three layers:
-
-### 1. Data Layer
+### Collections
 
 Raw input data is stored in **Collections**, which support two types of data:
 
@@ -33,54 +31,40 @@ Collections typically originate from organizational data sources, either:
 
 Connectors to enterprise sources can also be provided [upon request](mailto:hello@getbluemorpho.com).
 
-### 2. Knowledge Layer (Business Context Layer)
+### Extraction Runs
 
-The Knowledge Layer captures your business context in two key structures:
+**Extraction Runs** extract, transform, and enrich the data from **Collections** to build the **Knowledge Graphs** following the format of the **Ontologies**.
 
-#### Ontologies
+### Ontologies
 
 Ontologies define **business concepts** (e.g., `Driver`, `Vehicle`, `Trip`) and their **properties** (e.g., `name`, `address`, `SSN`).
 
-#### Knowledge Graphs
+### Knowledge Graphs
 
 A Knowledge Graph connects **entities** with their **relationships**.  
 For example, the Driver "John Doe" might be linked to his Vehicle and Trips using relations like `hasVehicle`, `hasTrip`.
 
+### Knowledge Bases
+
 Together, the Ontology and Knowledge Graph form a **Knowledge Base**.
 
-The Knowledge Base ensures that your data is:
+Knowledge Bases ensure that your data is:
 
 - **Well-defined**, thanks to the Ontology
 - **Linked and resolved**, through relations in the Knowledge Graph
 
 This structure makes it easy for AI agents to find and use the right data reliably.
 
-**Extraction Runs** extract, transform, and enrich the data from **Collections** to build the **Knowledge Graphs** following the format of the **Ontologies**.
-
-### 3. Application Layer
-
-This layer enables you to build and run AI applications that access and reason over your data.
-
-#### Internal Agents
+### Internal Agents
 
 Blue Morpho includes built-in agents for:
 
 - Answering queries based on your data
 - Building reports that auto-update as the Knowledge Base evolves
 
-#### External Agents
+### External Agents
 
 Agents that operate outside of Blue Morpho can connect to its Knowledge Layer using the **Model Context Protocol**.
-
----
-
-## Summary
-
-| Layer              | Purpose                                                             |
-|-------------------|----------------------------------------------------------------------|
-| **Data Layer**     | Collect and structure unstructured/structured enterprise data        |
-| **Knowledge Layer**| Turn raw data into linked business context via ontologies and graphs |
-| **Application Layer** | Build agents and apps that reason over structured business knowledge  |
 
 ---
 
