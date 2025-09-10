@@ -31,18 +31,21 @@ Upon upload, **Blue Morpho** will automatically parse these documents, transform
 
 ## Step 2: Define Your Ontology
 
-When consolidating multiple portfolios, key concepts (ontology classes) include `Accounts`, `Holdings`, and `Financial Instruments`.
+When consolidating multiple portfolios, key concepts (ontology classes) include `Account`, `Cash Balance`, `Holding`, and `Financial Instrument`.
+
+<img width="683" height="341" alt="ontology-diagram" src="https://github.com/user-attachments/assets/02e7356f-0e06-4632-a398-61d00351ef3d" />
 
 Navigate to the **Ontologies** section and create a new ontology. You can name it "consolidate portfolios". After the creation, click on "New version": you can either use the editor or download our [example ontology in YAML format](https://github.com/getbluemorpho/blue-morpho/blob/main/docs/assets/consolidate%20portfolios%20ontology.yaml) and import it directly into **Blue Morpho**.
 
 You should see the following classes: 
+
 <img width="615" height="530" alt="image" src="https://github.com/user-attachments/assets/c9ba3341-0562-43da-aa29-475cceefa340" />
 
-<img width="615" height="466" alt="image" src="https://github.com/user-attachments/assets/705e98c5-5a57-4a61-b2e9-69bc79b8ea6a" />
+<img width="614" height="317" alt="image" src="https://github.com/user-attachments/assets/244f5886-28a1-4e9b-b515-14389d4fb910" />
 
 <img width="617" height="419" alt="image" src="https://github.com/user-attachments/assets/baa1b315-cdac-4e51-aee2-2e4669259300" />
 
-<img width="614" height="317" alt="image" src="https://github.com/user-attachments/assets/244f5886-28a1-4e9b-b515-14389d4fb910" />
+<img width="615" height="466" alt="image" src="https://github.com/user-attachments/assets/705e98c5-5a57-4a61-b2e9-69bc79b8ea6a" />
 
 And the following relationships:
 
