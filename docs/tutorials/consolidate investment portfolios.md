@@ -66,27 +66,27 @@ The default settings work well and there is no need to configure advanced parame
 At this stage, you should have extracted 3 `Accounts`, 192 `Financial Instruments`, 184 `Holdings` and 7 `Cash Balances`.
 
 As you can see in the results section, relations have also been extracted. For example, this particular `Holding` is linked with one `Financial Instrument` and one `Account`:
+
 <img width="1212" height="642" alt="image" src="https://github.com/user-attachments/assets/3b56bd45-a8b6-406a-9211-809d46fb221e" />
 
+??? note "Advanced considerations: How Blue Morpho Handles Different Broker Data Formats"
+    Different brokers format data inconsistently:
 
-#### Advanced considerations: How Blue Morpho Handles Different Broker Data Formats
+    - Some classify interest payments or dividends as transactions, others don't
+    - Some show sell transaction amounts as negative quantities, others as positive
+    - Date formats, currency symbols, and field names vary across platforms
 
-Different brokers format data inconsistently:
+    **What you can do:**
 
-- Some classify interest payments or dividends as transactions, others don't
-- Some show sell transaction amounts as negative quantities, others as positive
-- Date formats, currency symbols, and field names vary across platforms
+    - **Use descriptive class definitions**: For example, if you only want stock/bond transactions (excluding interest payments or dividends), state this in your `Transaction` class description
+    
+    <img width="612" height="94" alt="image" src="https://github.com/user-attachments/assets/d2997e72-c4d1-49f3-be55-2a4cf5bcb34a" />
 
-**What you can do:**
+    - **Use descriptive property definitions**: For example, if you want sell transaction amounts as positive quantities, specify that all `quantity` and `amount` values should be positive numbers and add a `transaction_type` property that is either "sell" or "buy".
+    
+    <img width="608" height="528" alt="image" src="https://github.com/user-attachments/assets/b3c4849e-5dcc-4692-9748-42914ffa56b8" />
 
- - **Use descriptive class definitions**: For example, if you only want stock/bond transactions (excluding interest payments or dividends), state this in your `Transaction` class description
-<img width="612" height="94" alt="image" src="https://github.com/user-attachments/assets/d2997e72-c4d1-49f3-be55-2a4cf5bcb34a" />
-
- - **Use descriptive property definitions**: For example, if you want sell transaction amounts as positive quantities, specify that all `quantity` and `amount` values should be positive numbers and add a `transaction_type` property that is either "sell" or "buy".
-<img width="608" height="528" alt="image" src="https://github.com/user-attachments/assets/b3c4849e-5dcc-4692-9748-42914ffa56b8" />
-
-Blue Morpho will automatically transform inconsistent broker data into clean, standardized entities that follow your exact specifications. 
-
+    Blue Morpho will automatically transform inconsistent broker data into clean, standardized entities that follow your exact specifications. 
 
 ### 3.3 Deduplication
 This critical step consolidates duplicate entities across your multiple accounts. For example, Amazon (AMZN) stock is held in all three accounts, so it was extracted three times as separate `Financial Instrument` entities. While it's correct to maintain three separate `Holding` entities (one for each account), you want to create a single `Financial Instrument` entity for AMZN.
@@ -111,10 +111,10 @@ This step keeps account-specific holdings separate (for tax tracking or individu
 <img width="1224" height="282" alt="image" src="https://github.com/user-attachments/assets/3d16fb82-299e-462e-b105-552e02e98253" />
 
 
-#### Advanced considerations: Sophisticated Deduplication
-This step is also useful in more complex cases. For example, "Tesla" and "Tesla, Inc." can be reconciled using fuzzy matching on the corresponding property, plus AI review to make the final decision (a tutorial dedicated to complex entity resolution will come soon). 
+??? note "Advanced considerations: Sophisticated Deduplication"
+    This step is also useful in more complex cases. For example, "Tesla" and "Tesla, Inc." can be reconciled using fuzzy matching on the corresponding property, plus AI review to make the final decision (a tutorial dedicated to complex entity resolution will come soon). 
 
-Once complete, go to **Results** and create your **Knowledge Base**: this becomes your queryable, unified investment database ready for analysis!
+    Once complete, go to **Results** and create your **Knowledge Base**: this becomes your queryable, unified investment database ready for analysis!
 
 ## Step 4: Query Your Consolidated Portfolio
 
@@ -124,11 +124,17 @@ Navigate to **Ask** section. This will open a conversational interface. You shou
 
 <img width="621" height="175" alt="image" src="https://github.com/user-attachments/assets/71a666b8-aa08-4ec2-8c24-a46b5cb7a75f" />
 
- - **Summary statistics**
+### Select your Knowledge Base
 
+> "Project ‘YOUR-PROJECT’, knowledge base ‘YOUR-KNOWLEDGE-BASE’
+
+### Query: Summary statistics
+ 
 Let's first verify that we can replicate summary statistics present in the account statements to confirm accuracy: 
 
-> "Project ‘YOUR-PROJECT’, knowledge base ‘YOUR-KNOWLEDGE-BASE’, compute allocation (in terms of market value and % of total) by type of financial instrument, for each account. Take the cash position into account" 
+> Compute allocation (in terms of market value and % of total) by type of financial instrument, for each account. Take the cash position into account.
+
+The agent should return:
 
 <img width="833" height="632" alt="image" src="https://github.com/user-attachments/assets/38a63385-da9c-437c-a5a0-5dddbff6b128" />
 
@@ -138,7 +144,9 @@ You should have the exact same metrics that you can find in the accounts stateme
 
 The numbers match (although the aggregated information is of course not in the knowledge base), that's a good start! Now we can perform other queries.
 
- - **Top holdings of the combined portfolios**
+### Query: Top holdings of the combined portfolios
+
+Now let’s aggregate across accounts.
 
 > What are the top 10 holdings of the combined portfolio? For each holding, indicate in how many accounts it can be found.
 
