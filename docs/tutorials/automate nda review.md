@@ -31,7 +31,7 @@ For example, you might want to check the following points:
 
 These criteria become **classes** in your ontology—each one representing a rule you want to validate.
 
-### Example: `MutualityProvision` Class
+**Example: `MutualityProvision` Class**
 
 <img width="653" height="313" alt="image" src="https://github.com/user-attachments/assets/0267bc13-358a-4f30-9e10-ed879cdf7424" />
 
@@ -56,7 +56,7 @@ Your Knowledge Base should now be visible in the **Knowledge Base** section.
 
 ### Setup
 
-1. Install Cursor and connect Blue Morpho following [these steps](../product/setup-blue-morpho-mcp.md).
+1. Install Cursor and connect Blue Morpho following [these steps](../product/core%20concepts/5.%20setup%20blue%20morpho%20mcp.md).
 2. Open your NDA folder: **File > Open Folder**
 3. Create a new chat (top right corner)
 4. Select your target NDA
