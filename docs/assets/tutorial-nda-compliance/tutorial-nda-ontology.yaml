@@ -1,4 +1,4 @@
-entity_types:
+class_versions:
 - description: ''
   name: MutualityProvision
   properties:
