@@ -148,7 +148,7 @@ The numbers match (although the aggregated information is of course not in the k
 
 Now let’s aggregate across accounts.
 
-> What are the top 10 holdings of the combined portfolio? For each holding, indicate in how many accounts it can be found.
+> What are the top 10 financial instruments by holding market value of the consolidated portfolio? For each instrument, indicate in how many accounts it can be found.
 
 <img width="836" height="627" alt="image" src="https://github.com/user-attachments/assets/ff768c82-5451-427a-8853-5485e8d94ba7" />
 
