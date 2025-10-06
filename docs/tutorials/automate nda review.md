@@ -43,8 +43,11 @@ Since each clause can be evaluated independently, relationships between classes 
 2. Click New Ontology.  
 3. Add a Name (e.g. *“NDA Compliance Ontology”*). 
 4. Add a Description (e.g. *“Ontology to check NDA provisions against internal rules”*).  
-5. Download the [sample NDA ontology](https://github.com/getbluemorpho/blue-morpho/blob/main/docs/assets/tutorial-nda-compliance/tutorial-nda-ontology.yaml) and import the YAML file. 
-6. Click Create
+5. Click Create
+6. Click Import from YAML
+7. Download the [sample NDA ontology](https://github.com/getbluemorpho/blue-morpho/blob/main/docs/assets/tutorial-nda-compliance/tutorial-nda-ontology.yaml) and import the YAML file. 
+8. Click Create
+
 
 ### **Explore your ontology**
 
@@ -89,7 +92,7 @@ Use this view to validate your extraction. Check that the results follow the rul
 
 After reviewing your extraction results, create a knowledge base to make them queryable.
 
-1. In the Extraction Results view, click Create Knowledge Base.  
+1. In the Extraction results view, click Create knowledge base.  
 2. Add a Name (e.g. *“NDA Compliance KB”*).
 3. Add a Description (e.g. *“Knowledge Base of NDA compliance results”*).  
 3. Click Create.
