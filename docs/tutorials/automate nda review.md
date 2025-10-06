@@ -10,8 +10,8 @@ All your work in Blue Morpho starts inside a project. A project groups together 
 
 1. Go to Projects.  
 2. Click New Project.  
-3. Add a name (e.g. *“NDA Compliance”*). 
-4. Add a goal (e.g. *“Automate compliance checks across our NDAs”*).
+3. Add a Name (e.g. *“NDA Compliance”*). 
+4. Add a Description (e.g. *“Automate compliance checks across our NDAs”*).
 5. Click Create.
 
 ## **Step 2: Create a collection**
@@ -20,8 +20,8 @@ A collection is a folder of documents processed with the same ontology. You can 
 
 1. Go to Collections.  
 2. Click New Collection.  
-3. Add a name (e.g. *“NDA Compliance Docs”*).
-4. Add a description (e.g. *“Collection of active NDAs signed with partners.”*).  
+3. Add a Name (e.g. *“NDA Compliance Docs”*).
+4. Add a Description (e.g. *“Collection of active NDAs signed with partners.”*).  
 4. Download the [sample dataset](https://github.com/getbluemorpho/blue-morpho/blob/main/docs/assets/tutorial-nda-compliance/tutorial-nda-documents.zip) and upload the NDAs files. 
 5. Click Create
 
@@ -41,8 +41,8 @@ Since each clause can be evaluated independently, relationships between classes 
 
 1. Go to Ontologies.  
 2. Click New Ontology.  
-3. Add a name (e.g. *“NDA Compliance Ontology”*). 
-4. Add a description (e.g. *“Ontology to check NDA provisions against internal rules”*).  
+3. Add a Name (e.g. *“NDA Compliance Ontology”*). 
+4. Add a Description (e.g. *“Ontology to check NDA provisions against internal rules”*).  
 5. Download the [sample NDA ontology](https://github.com/getbluemorpho/blue-morpho/blob/main/docs/assets/tutorial-nda-compliance/tutorial-nda-ontology.yaml) and import the YAML file. 
 6. Click Create
 
@@ -62,8 +62,8 @@ With your NDAs and ontology ready, the next step is to apply the rules and extra
 
 1. Go to Extraction Runs.  
 2. Click New Run.  
-3. Add a name (e.g. *“NDA Compliance Extraction”*).
-4. Add a description (e.g. *“Run to check NDA provisions against compliance ontology”*).  
+3. Add a Name (e.g. *“NDA Compliance Extraction”*).
+4. Add a Description (e.g. *“Run to check NDA provisions against compliance ontology”*).  
 5. Select your Ontology (*“NDA Compliance Ontology”*).
 6. Select your Collection (*“NDA Compliance Docs”*)  
 6. Click Create  
@@ -90,8 +90,8 @@ Use this view to validate your extraction. Check that the results follow the rul
 After reviewing your extraction results, create a knowledge base to make them queryable.
 
 1. In the Extraction Results view, click Create Knowledge Base.  
-2. Add a name (e.g. *“NDA Compliance KB”*).
-3. Add a description (e.g. *“Knowledge Base of NDA compliance results”*).  
+2. Add a Name (e.g. *“NDA Compliance KB”*).
+3. Add a Description (e.g. *“Knowledge Base of NDA compliance results”*).  
 3. Click Create.
 
 ## **Step 6: Query your knowledge base**
@@ -99,7 +99,7 @@ After reviewing your extraction results, create a knowledge base to make them qu
 With your knowledge base ready, you can now ask questions in plain language. Each query is translated into a structured search based on your ontology and the supporting text extracted from your NDAs.
 
 1. Go to Knowledge Bases.  
-2. Select your Knowledge Base (“*NDA Compliance KB*”).   
+2. Select your knowledge base (“*NDA Compliance KB*”).   
 3. At the top right, click on “Ask” to start a chat with your knowledge base
 
 ### **Example 1 \- View overall compliance**
