@@ -1,4 +1,4 @@
-entity_types:
+class_versions:
 - description: Brokerage account containing various financial holdings
   name: Account
   properties:
@@ -105,12 +105,12 @@ entity_types:
     possible_values: null
     type: str
 relation_types:
-- object_name: Holding
-  predicate: Contains
-  subject_name: Account
-- object_name: CashPosition
-  predicate: HasCash
-  subject_name: Account
-- object_name: FinancialInstrument
-  predicate: Has
-  subject_name: Holding
+- target_name: Holding
+  name: Contains
+  source_name: Account
+- target_name: CashPosition
+  name: HasCash
+  source_name: Account
+- target_name: FinancialInstrument
+  name: Has
+  source_name: Holding
