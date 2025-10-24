@@ -1,0 +1,121 @@
+class_versions:
+- description: ''
+  name: MutualityProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA allows each party to share and receive confidential information, no otherwise
+    is_required: false
+    name: is_compliant
+    type: bool
+- description: ''
+  name: DisclosureExceptionsProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA contains an exception when information was previously known to the receiving party without restriction before receipt from the disclosing party, no otherwise
+    is_required: false
+    name: previously_known_exception_compliance
+    type: bool
+  - description: Yes if the NDA contains an exception when information is independently developed by the receiving party without use of the confidential information, no otherwise
+    is_required: false
+    name: independently_developed_exception_compliance
+    type: bool
+  - description: Yes if the NDA contains an exception when information acquired by the receiving party from a third party which was not, to the receiving party's knowledge, under an obligation not to disclose such information, no otherwise
+    is_required: false
+    name: third_party_acquisition_exception_compliance
+    type: bool
+  - description: Yes if the NDA contains an exception when information is publicly available through no breach of the NDA, no otherwise
+    is_required: false
+    name: publicly_available_exception_compliance
+    type: bool
+  - description: Yes if the NDA contains an exception when disclosure of information was approved in writing by the disclosing party for disclosure, no otherwise
+    is_required: false
+    name: written_approval_exception_compliance
+    type: bool
+- description: ''
+  name: OwnershipProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA does not transfer IP ownership and discloser retains ownership, no otherwise
+    is_required: false
+    name: is_compliant
+    type: bool
+- description: ''
+  name: TermProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA requires each party to protect confidential information for no less than 1 year, no otherwise
+    is_required: false
+    name: is_compliant
+    type: bool
+- description: ''
+  name: IndemnityProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA does not include indemnity language, no otherwise
+    is_required: false
+    name: is_compliant
+    type: bool
+- description: ''
+  name: LiquidatedDamagesProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA does not contain liquidated damages or other pre-agreed monetary compensation language, no otherwise
+    is_required: false
+    name: is_compliant
+    type: bool
+- description: ''
+  name: DPAReferenceProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA does not include any reference to "data processing agreement", "data processing addendum", or "DPA", no otherwise
+    is_required: false
+    name: no_dpa_reference_compliance
+    type: bool
+- description: ''
+  name: NonSolicitProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA does not include any non-solicit language
+    is_required: false
+    name: is_compliant
+    type: bool
+- description: ''
+  name: ChoiceOfLawProvision
+  properties:
+  - description: Text elements from the document supporting the assessment
+    is_required: false
+    name: supporting_elements
+    type: str
+  - description: Yes if the NDA has a choice of law that includes only one of the following - Delaware or DE, New York or NY, California or CA, the United Kingdom or UK, or Singapore, no otherwise
+    is_required: false
+    name: is_compliant
+    type: bool
+  - description: The jurisdiction specified in the NDA choice of law provision
+    is_required: false
+    name: jurisdiction_specified
+    type: str
+relation_types: []
