@@ -20,7 +20,7 @@ A collection is a set of documents analyzed with the same ontology. You can uplo
 1. Go to **Collections**.  
 2. Click **New Collection**.  
 3. Enter a name (e.g. “ETF Documents”) and a short description (e.g. “Factsheets and KIDs for ETFs”).  
-4. Upload the [sample PDFs](https://github.com/getbluemorpho/blue-morpho/tree/main/docs/assets/tutorial-analyze-ETFs) provided for this tutorial.   
+4. Upload the 6 sample PDFs provided in [this ZIP file](https://github.com/getbluemorpho/blue-morpho/raw/refs/heads/main/docs/assets/tutorial-analyze-ETFs/tutorial-analyze-ETFs-PDFs.zip) for this tutorial.
 5. Click **Create**
 
 **Note:** The dataset includes both KID and Factsheet PDFs for three ETFs. These are for demonstration only and not for financial use.
@@ -60,6 +60,8 @@ You can create an ontology manually or use the ontology assistant. For this tuto
 
 After importing, you’ll see your ontology as a list of entities and relationships.
 
+You can add short natural language descriptions to each entity, property and relation to capture their meaning in your business context. These descriptions enrich the ontology with contextual knowledge, helping the agent give grounded answers. Blue Morpho also uses them during extraction to accurately identify and map the right information from your documents, even when wording or terminology varies.
+
 Review the entities and their properties, especially those related to ETFs.
 
 ![ontology](../assets/tutorial-analyze-ETFs/images/image3.png)
@@ -73,8 +75,7 @@ Now let’s extract data from your ETF documents based on your ontology.
 3. Add a name (e.g. *“ETF extraction”*) and a description (e.g. *“Extract key ETF information from Factsheets and KIDs”*).  
 4. Select your **Ontology** (*“ETF analysis ontology”*) and your **Collection** (*“ETF documents”*)  
 5. Click **Create**  
-6. Skip **Chunking** (unnecessary for short documents such as Factsheets and KIDs).  
-7. Add an **Extraction step** with the default settings and click **Extract**.
+6. Add an **Extraction step** with the default settings and click **Extract**.
 
 ### **Review your extraction results**
 
@@ -87,7 +88,7 @@ This step helps you verify that Blue Morpho correctly extracted the information,
 
 Once the extraction results look correct, move on to deduplication:
 
-8. Scroll back up and click **Deduplication (optional)**
+* Scroll back up and click **Deduplication (optional)**
 
 ### **Deduplicate extraction results**
 
@@ -100,13 +101,13 @@ In this tutorial, you’ll notice duplicates for:
 
 To deduplicate:
 
-9. Click **Add class to deduplicate entities**  
-10. Select **ETF** and **Sector**
+1. Click **Add class to deduplicate entities**  
+2. Select **ETF** and **Sector**
 
 In this case, the deduplication process is straightforward, and Blue Morpho can handle it without additional configuration:
 
-11. Click on **Generate rules** without adding any guidelines  
-12. Click on **Deduplicate** 
+3. Click on **Generate rules** without adding any guidelines  
+4. Click on **Deduplicate** 
 
 ### **Review your deduplication results**
 
@@ -153,7 +154,7 @@ Show me the ETF with the best environmental characteristics, limited risks and r
 Compare the sector exposure of your selected ETFs using the latest available data.
 
 ```
-Compare sector exposure across my ETFs
+Compare sector exposure across all my ETFs
 ```
 
 ![sector](../assets/tutorial-analyze-ETFs/images/image7.png)
@@ -163,7 +164,7 @@ Compare sector exposure across my ETFs
 Compare specific cost criteria across all ETFs in your portfolio or selection.
 
 ```
-Compare total fees over 5 years for an initial investment of €10,000, followed by monthly contributions of €500 and a full exit after 5 years, assuming a 10% annual return across all ETFs.
+Compare total fees across all ETFs.
 Format as a table with columns: ETF | Entry fees | Transaction fees | Other fees | Exit fee
 ```
 
