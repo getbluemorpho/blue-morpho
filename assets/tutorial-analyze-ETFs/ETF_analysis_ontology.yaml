@@ -1,0 +1,169 @@
+class_versions:
+- description: Exchange-Traded Fund with comprehensive properties for fund identification, investment details, risk metrics, and costs
+  name: ETF
+  properties:
+  - description: Full official name of the fund
+    is_required: true
+    name: fund_name
+    possible_values: null
+    type: str
+  - description: International Securities Identification Number uniquely identifying the fund
+    is_required: true
+    name: isin
+    possible_values: null
+    type: str
+  - description: Name of the entity responsible for managing the fund
+    is_required: false
+    name: management_company
+    possible_values: null
+    type: str
+  - description: Name of the benchmark index tracked by the fund
+    is_required: false
+    name: benchmark_index_name
+    possible_values: null
+    type: str
+  - description: Primary currency used for fund accounting and valuation
+    is_required: false
+    name: base_currency
+    possible_values: null
+    type: str
+  - description: Approach used by the fund to replicate the benchmark index
+    is_required: false
+    name: replication_method
+    possible_values:
+    - Physical full replication
+    - Physical optimized sampling
+    - Synthetic swap-based replication
+    - Mixed replication
+    - Indirect replication
+    type: str
+  - description: Describes whether income is accumulated or distributed to investors
+    is_required: false
+    name: distribution_policy
+    possible_values:
+    - Accumulating
+    - Distributing
+    type: str
+  - description: Country where the fund is legally registered or domiciled
+    is_required: false
+    name: domicile
+    possible_values: null
+    type: str
+  - description: Entry fee as a percentage
+    is_required: false
+    name: entry_fee_percent
+    possible_values: null
+    type: float
+  - description: Exit fee as a percentage
+    is_required: false
+    name: exit_fee_percent
+    possible_values: null
+    type: float
+  - description: Ongoing charges as a percentage
+    is_required: false
+    name: ongoing_charges_percent
+    possible_values: null
+    type: float
+  - description: Management fee as a percentage
+    is_required: false
+    name: management_fee_percent
+    possible_values: null
+    type: float
+  - description: Administrative fee as a percentage
+    is_required: false
+    name: administrative_fee_percent
+    possible_values: null
+    type: float
+  - description: Transaction cost as a percentage
+    is_required: false
+    name: transaction_cost_percent
+    possible_values: null
+    type: float
+  - description: Performance fee as a percentage
+    is_required: false
+    name: performance_fee_percent
+    possible_values: null
+    type: float
+  - description: Numeric risk indicator on a scale from 1 (lowest risk) to 7 (highest risk)
+    is_required: false
+    name: srri_value
+    possible_values:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    type: int
+  - description: Environmental, social, and governance approach or screening used by the fund
+    is_required: false
+    name: esg_strategy
+    possible_values:
+    - Exclusions
+    - Best-in-class
+    - Thematic
+    - Impact investing
+    - Paris-aligned benchmark (PAB)
+    - Climate transition benchmark (CTB)
+    - Sustainability tilt
+    - None
+    type: str
+  - description: Sustainable Finance Disclosure Regulation classification assigned to the fund
+    is_required: false
+    name: sfdr_classification
+    possible_values:
+    - Article 6
+    - Article 8
+    - Article 9
+    - Not classified
+    type: str
+  - description: Exchange or trading venue where the fund's shares are listed or traded
+    is_required: false
+    name: exchange_listing
+    possible_values: null
+    type: str
+  - description: Currency in which the fund's shares are traded on exchanges
+    is_required: false
+    name: trading_currency
+    possible_values: null
+    type: str
+
+- description: Investment sector classification
+  name: Sector
+  properties:
+  - description: Sector name such as Health Care, Technology, Financials
+    is_required: true
+    name: name
+    possible_values: null
+    type: str
+
+- description: Represents the weight of a specific sector within an ETF portfolio at a given date
+  name: SectorExposure
+  properties:
+  - description: Unique identifier for the sector exposure record
+    is_required: true
+    name: exposure_id
+    possible_values: null
+    type: str
+  - description: Date when the sector exposure was measured
+    is_required: true
+    name: as_of
+    possible_values: null
+    type: date
+  - description: Weight of the sector within the ETF portfolio as a percentage
+    is_required: true
+    name: weight_percent
+    possible_values: null
+    type: float
+
+relation_types:
+- description: Links an ETF to its sector exposure data
+  name: has_sector_exposure
+  source_name: ETF
+  target_name: SectorExposure
+
+- description: Links sector exposure data to the specific sector
+  name: references
+  source_name: SectorExposure
+  target_name: Sector
