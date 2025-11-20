@@ -24,7 +24,7 @@ A Collection is a folder of documents processed with the same ontology. Upload y
 2. Click **New Collection**.  
 3. Add a name (e.g., *“Pitch Deck Dataset”*).  
 4. Add a description (e.g., *“A set of startup pitch decks.”*).  
-5. Upload the sample pitch decks. Download here.   
+5. Upload the sample pitch decks. [Download here](https://github.com/getbluemorpho/blue-morpho/tree/643f6b6de88b6fabb8f307b7bf33aa64cfd52712/docs/assets/tutorial-analyze-pitch-decks).   
 6. Click **Create**.
 
 ## **Step 3: Create an Ontology with the AI Assistant**
