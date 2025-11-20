@@ -170,9 +170,9 @@ Give me an overview of all startups with their company details in a clean table
 
 See how each startup positions its product and the value it delivers to customers.
 ```
-Analyze the product and value proposition for all startups
+Analyze the product and value proposition for Airbnb
 ```
-<img width="821" height="329" alt="ex2" src="https://github.com/user-attachments/assets/3d7c309c-7665-4c5e-8a03-3690c7f098cd" />
+<img width="813" height="287" alt="ex2" src="https://github.com/user-attachments/assets/65d43dbc-0426-4d18-8e70-2b425809ff63" />
 
 ### **Example 3 – Evaluate investment‑fit**
 
