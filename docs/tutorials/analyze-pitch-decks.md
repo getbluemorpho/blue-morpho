@@ -65,7 +65,7 @@ The ontology should capture:
 * Financials: round type, funding ask, use of funds
 ```
 
-### **Review your generated ontology**
+#### **Review your generated ontology**
 
 Once generated, review the proposed classes and properties and check whether they match your workflow:
 
@@ -79,7 +79,7 @@ You can refine your ontology at any time. Tell the AI assistant what you want to
 
 After creating the base structure, you can teach the ontology how you actually evaluate startups. This is where domain knowledge becomes part of the system.
 
-#### **1\. Identify only the primary company**
+**1\. Identify only the primary company**
 
 Pitch decks mention many companies—competitors, customers, partners. Only the startup being pitched should be extracted as a `Company`. Everything else should map to other concepts. We can ask the assistant to create this rule. 
 
@@ -89,7 +89,7 @@ Prompt to use:
 Ensure the Company class is populated only with the primary startup of the deck and not with any other companies mentioned.
 ```
 
-#### **2\. Add deal-fit logic based on your investment thesis**
+**2\. Add deal-fit logic based on your investment thesis**
 
 To help Blue Morpho evaluate whether each startup aligns with your fund’s investment criteria, you can add business rules that assess deal-fit directly from the extracted information. This allows the system to classify opportunities automatically and explain the reasoning in natural language.
 
@@ -106,7 +106,7 @@ What we look for:
 * Raising between €300k and €2M.
 ```
 
-#### **3\. Track risks inferred from extracted data**
+**3\. Track risks inferred from extracted data**
 
 Finally, you can extend your ontology to detect risks automatically based on the information extracted from each pitch deck. This turns risk analysis into an automated layer that highlights missing data, weak signals, or unrealistic claims.
 
