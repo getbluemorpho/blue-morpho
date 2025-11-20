@@ -1,4 +1,4 @@
-# Analyze ETFs with Blue Morpho
+# Analyze ETFs
 
 Information on ETFs such as fees, structure, or ESG criteria is often buried in unstructured documents. Blue Morpho lets you model the key data points once and extract them consistently across all documents, making comparison and analysis easy.
 
